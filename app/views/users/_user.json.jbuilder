@@ -1,0 +1,2 @@
+json.extract! user, :id, :init_data, :employment_status, :age, :nationality, :household_income, :personal_income, :marital_status, :interaction, :created_at, :updated_at
+json.url user_url(user, format: :json)

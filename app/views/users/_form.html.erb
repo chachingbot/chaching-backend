@@ -1,0 +1,57 @@
+<%= form_for(user) do |f| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :init_data %>
+    <%= f.text_field :init_data %>
+  </div>
+
+  <div class="field">
+    <%= f.label :employment_status %>
+    <%= f.check_box :employment_status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nationality %>
+    <%= f.text_field :nationality %>
+  </div>
+
+  <div class="field">
+    <%= f.label :household_income %>
+    <%= f.text_field :household_income %>
+  </div>
+
+  <div class="field">
+    <%= f.label :personal_income %>
+    <%= f.text_field :personal_income %>
+  </div>
+
+  <div class="field">
+    <%= f.label :marital_status %>
+    <%= f.text_field :marital_status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :interaction %>
+    <%= f.number_field :interaction %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

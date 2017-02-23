@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Base type:</strong>
+  <%= @classification.base_type %>
+</p>
+
+<p>
+  <strong>Sub type:</strong>
+  <%= @classification.sub_type %>
+</p>
+
+<%= link_to 'Edit', edit_classification_path(@classification) %> |
+<%= link_to 'Back', classifications_path %>

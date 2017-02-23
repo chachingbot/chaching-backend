@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Init data:</strong>
+  <%= @user.init_data %>
+</p>
+
+<p>
+  <strong>Employment status:</strong>
+  <%= @user.employment_status %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @user.age %>
+</p>
+
+<p>
+  <strong>Nationality:</strong>
+  <%= @user.nationality %>
+</p>
+
+<p>
+  <strong>Household income:</strong>
+  <%= @user.household_income %>
+</p>
+
+<p>
+  <strong>Personal income:</strong>
+  <%= @user.personal_income %>
+</p>
+
+<p>
+  <strong>Marital status:</strong>
+  <%= @user.marital_status %>
+</p>
+
+<p>
+  <strong>Interaction:</strong>
+  <%= @user.interaction %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

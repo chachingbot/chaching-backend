@@ -1,0 +1,37 @@
+<%= form_for(query) do |f| %>
+  <% if query.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(query.errors.count, "error") %> prohibited this query from being saved:</h2>
+
+      <ul>
+      <% query.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :raw_input %>
+    <%= f.text_field :raw_input %>
+  </div>
+
+  <div class="field">
+    <%= f.label :classification_id %>
+    <%= f.text_field :classification_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :resolved %>
+    <%= f.check_box :resolved %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

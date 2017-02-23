@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  init_data: 
+  employment_status: false
+  age: 1
+  nationality: MyString
+  household_income: 1.5
+  personal_income: 1.5
+  marital_status: MyString
+  interaction: 1
+
+two:
+  init_data: 
+  employment_status: false
+  age: 1
+  nationality: MyString
+  household_income: 1.5
+  personal_income: 1.5
+  marital_status: MyString
+  interaction: 1

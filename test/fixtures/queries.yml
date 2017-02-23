@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  raw_input: MyString
+  classification: one
+  user: one
+  resolved: false
+
+two:
+  raw_input: MyString
+  classification: two
+  user: two
+  resolved: false
